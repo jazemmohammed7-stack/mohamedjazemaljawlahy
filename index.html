@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مقدمة عن البرمجة</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --highlight: #22c55e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Cairo", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: linear-gradient(160deg, #0b1220 0%, var(--bg) 60%, #0b1220 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      padding: 64px 20px 28px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+    }
+    header p {
+      margin: 0 auto;
+      max-width: 800px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    main {
+      max-width: 980px;
+      margin: 24px auto 60px;
+      padding: 0 20px 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    @media (min-width: 760px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    section {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.00));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 18px 18px;
+      backdrop-filter: blur(6px);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      color: var(--accent);
+    }
+    section p { margin: 8px 0 12px; }
+    ul { margin: 8px 0 0; padding-inline-start: 18px; }
+    li { margin: 6px 0; }
+    code, pre {
+      font-family: Consolas, "SF Mono", Menlo, Monaco, monospace;
+      background: #0b1020;
+      color: #d1e7ff;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+    }
+    pre { padding: 12px; overflow-x: auto; }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      margin: 4px 6px 0 0;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--text);
+      border: 1px solid rgba(56, 189, 248, 0.5);
+      font-size: 0.9rem;
+    }
+    .note {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 16px 20px 40px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .success { color: var(--highlight); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>مقدمة عن البرمجة</h1>
+    <p>
+      البرمجة هي طريقة للتواصل مع الحاسوب عبر أوامر منطقية تُكتب بلغات خاصة،
+      لنحلّ مشكلات ونبني تطبيقات ومواقع وأدوات تُسهّل الحياة وتفتح آفاق العمل والإبداع.
+    </p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section>
+        <h2>ما هي البرمجة؟</h2>
+        <p>
+          البرمجة هي كتابة تعليمات وخطوات واضحة ليقوم الحاسوب بتنفيذها.
+          نتبع فيها <b>منطقًا</b> محددًا ونركّب الحل على شكل خوارزميات ثم نحوله إلى كود قابل للتنفيذ.
+        </p>
+        <p class="note">فكّر فيها كترجمة خطة الحل إلى لغة يفهمها الحاسوب.</p>
+      </section>
+
+      <section>
+        <h2>لماذا نتعلم البرمجة؟</h2>
+        <ul>
+          <li><b>حلّ المشكلات:</b> تحويل الأفكار إلى أدوات عملية.</li>
+          <li><b>فرص عمل:</b> مجالات تقنية متنوّعة ورواتب تنافسية.</li>
+          <li><b>إبداع:</b> بناء تطبيقات، مواقع، ألعاب، وأنظمة ذكية.</li>
+          <li><b>تفكير منطقي:</b> تطوير مهارات التحليل واتخاذ القرار.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>لغات برمجة مشهورة</h2>
+        <p class="note">لكل لغة مزايا واستخدامات، اختر اللغة حسب هدفك.</p>
+        <div>
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">C++</span>
+          <span class="tag">Java</span>
+          <span class="tag">C#</span>
+          <span class="tag">Go</span>
+          <span class="tag">Rust</span>
+          <span class="tag">PHP</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>مجالات التطبيق</h2>
+        <ul>
+          <li><b>تطوير الويب:</b> مواقع وتطبيقات متفاعلة.</li>
+          <li><b>تطبيقات الموبايل:</b> Android و iOS.</li>
+          <li><b>الذكاء الاصطناعي والبيانات:</b> تعلم الآلة وتحليل البيانات.</li>
+          <li><b>الألعاب:</b> بناء عوالم تفاعلية.</li>
+          <li><b>الأنظمة والإنترنت للأشياء:</b> برمجة أجهزة وخدمات.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>كيف أبدأ؟</h2>
+        <ul>
+          <li><b>حدّد هدفك:</b> موقع؟ تحليل بيانات؟ لعبة؟</li>
+          <li><b>اختر لغة مناسبة:</b> للمبتدئ، Python و JavaScript خياران رائعان.</li>
+          <li><b>ابدأ بالمفاهيم الأساسية:</b> المتغيرات، الشروط، الحلقات، الدوال.</li>
+          <li><b>طبّق على مشاريع صغيرة:</b> آلة حاسبة، تنظيف بيانات، صفحة شخصية.</li>
+          <li><b>استمر بالتعلّم:</b> اقرأ التوثيق وابنِ مشاريع واقعية.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>أول برنامج بسيط</h2>
+        <p>مثال بلغة بايثون يطبع رسالة:</p>
+        <pre><code>print("مرحبًا بالعالم!")</code></pre>
+        <p class="note">الفكرة: اكتب أمرًا واحدًا ليظهر نص في الشاشة. البساطة تقود للفهم.</p>
+      </section>
+
+      <section>
+        <h2>نصائح للمبتدئين</h2>
+        <ul>
+          <li><b>قسّم المشكلة:</b> إلى خطوات صغيرة قابلة للحل.</li>
+          <li><b>اختبر كثيرًا:</b> غيّر شيئًا صغيرًا وراقب النتيجة.</li>
+          <li><b>اقرأ الأخطاء:</b> رسالة الخطأ تخبرك أين تبحث.</li>
+          <li><b>تعلم من الأمثلة:</b> انسخ، عدّل، افهم لماذا يعمل.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>مصطلحات أساسية</h2>
+        <ul>
+          <li><b>خوارزمية:</b> خطة حل خطوة بخطوة.</li>
+          <li><b>مترجم/مفسّر:</b> يحوّل الكود إلى تعليمات للحاسوب.</li>
+          <li><b>مكتبة:</b> كود جاهز لإعادة الاستخدام.</li>
+          <li><b>واجهة برمجية:</b> طريقة للتواصل مع نظام أو خدمة.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section>
+      <h2>خلاصة</h2>
+      <p>
+        البرمجة مهارة تُكتسب بالممارسة. اختر هدفًا صغيرًا وابدأ الآن، خطوة بعد خطوة،
+        وستلاحظ تقدّمك مع كل تجربة ناجحة <span class="success">— حتى لو كانت بسيطة.</span>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    صُممت هذه الصفحة للتعلّم الذاتي. يمكنك تعديلها وإضافة أمثلةك الخاصة.
+  </footer>
+</body>
+</html>
